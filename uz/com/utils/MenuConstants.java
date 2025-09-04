@@ -6,7 +6,7 @@ package uz.com.utils;
  */
 public interface MenuConstants {
 
-    String CALCULATOR_OPERATION = """
+    String OPERATION_MENU = """
             1. Addition
             2. Subtraction
             3. multiplication
@@ -17,7 +17,15 @@ public interface MenuConstants {
     String DESCRIPTION = "This mini application is provide for users to calculate mathematical operations between " +
                          "2 numbers (integer or floating numbers)";
 
-    static void showMenu(String menu){
+    String REGISTRATION_MENU = """
+            1. Log In
+            2. Sign Up
+            
+            0. Exit
+            """;
+
+
+    static void showMenu(String menu) {
         System.out.println("=".repeat(20) + menu.toUpperCase() + "=".repeat(20));
     }
 }
