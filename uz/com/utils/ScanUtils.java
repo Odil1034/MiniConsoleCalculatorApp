@@ -28,11 +28,11 @@ public interface ScanUtils {
     static String enterStr(String hint) {
         while (true) {
             System.out.print(hint);
-            if (scannerDouble.hasNextLine()) {
-                return scannerDouble.nextLine();
+            if (scannerStr.hasNextLine()) {
+                return scannerStr.nextLine();
             } else {
                 System.out.println("❌ Not a valid number. Please try again.");
-                scannerDouble.next();
+                scannerStr.next();
             }
         }
     }
